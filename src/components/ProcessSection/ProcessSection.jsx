@@ -21,15 +21,16 @@ const ProcessSection = () => {
         {steps.map((step, index) => (
           <motion.div
             key={index}
-            className="p-8 bg-white rounded-2xl shadow-lg transform transition duration-500 hover:scale-105"
+            className="p-8 bg-white rounded-2xl shadow-lg transform transition duration-500 hover:scale-105 hover:bg-[#17254E] hover:text-white" // Cambia el fondo y el color del texto al hacer hover
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: index * 0.2 }}
+            transition={{ duration: 0.5 }}
+            whileHover={{ scale: 1.05 }} // Efecto de zoom
           >
-            <h2 className="text-4xl font-bold text-[#17254E] mb-4">{step.number}</h2>
-            <h3 className="text-2xl font-semibold mb-2 text-[#17254E]">{step.title}</h3>
-            <p className="text-[#17254E]">{step.description}</p>
+            <h2 className="text-4xl font-bold mb-4">{step.number}</h2>
+            <h3 className="text-2xl font-semibold mb-2">{step.title}</h3>
+            <p>{step.description}</p>
           </motion.div>
         ))}
       </div>
