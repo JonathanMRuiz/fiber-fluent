@@ -22,12 +22,13 @@ export default function Contact() {
   return (
     <div>
       <section 
-        className="bg-cover bg-no-repeat bg-top w-full py-20" // Adjusted for full width and no repeat
+        className="bg-cover bg-no-repeat bg-top w-full py-60" // Aumentado el padding vertical para mayor altura
         style={{ backgroundImage: `url(${Banner})` }}
       >
         <h1 className="text-5xl text-white text-center">Contact</h1>
         <p className="text-md text-white text-center">lorem</p>
       </section>
+
       <div className="container mx-auto flex-grow p-4">
       {/* Banner with Image and Centered Text */}
       
