@@ -61,11 +61,12 @@ const Carrousel = () => {
           <SwiperSlide key={index}>
             {slide.type === "video" ? (
               <video
-                src={slide.src}
-                autoPlay
-                muted
-                className="w-full object-cover h-[50vh] sm:h-[85vh]"
-              />
+              src={slide.src}
+              autoPlay
+              muted
+              playsInline  // Asegura la reproducción en línea en dispositivos móviles
+              className="w-full object-cover h-[50vh] sm:h-[85vh]"
+            />
             ) : (
               <div
                 className="w-full h-[60vh] sm:h-[85vh] bg-cover bg-center"

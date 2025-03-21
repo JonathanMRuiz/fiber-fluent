@@ -15,7 +15,7 @@ const featureItems = [
 ];
 
 const FeatureSection = () => (
-  <Section id="services">
+  <Section>
     <Grid columns={4}>
       {featureItems.map((item, index) => (
         <motion.div
