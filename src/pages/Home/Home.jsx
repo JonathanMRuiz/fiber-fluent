@@ -22,6 +22,30 @@ export default function Home() {
   return (
     <div className='mb-10'>
       <Carrousel />
+
+      {/* Introduction Section */}
+      <section className="bg-white py-12 px-6">
+        <div className="max-w-screen-xl mx-auto">
+          <h2 className="text-4xl font-extrabold mb-6 text-[#17254E]">Introduction</h2>
+          <p className="text-lg text-[#17254E] mb-6">
+            At Fiber Fluent LLC, we are proud to be a veteran-owned underground infrastructure company specializing in communications and electrical installations. Founded by Peter Merlo, a former member of the 173rd Airborne Combat Team and a seasoned industry professional with over a decade of experience in construction and land development, our company was built on a foundation of integrity, precision, and hard-earned expertise.
+          </p>
+          <p className="text-lg text-[#17254E] mb-6">
+            With deep roots in underground utilities and community development, Fiber Fluent delivers tailored solutions for primary, secondary, and street lighting infrastructure, as well as communications conduit systems. We support residential, commercial, and municipal projects with services designed to meet modern demands for power and connectivity.
+          </p>
+          <p className="text-lg text-[#17254E] mb-6">
+            Our experienced crews are equipped to handle OpenTrench, MissileBore, DirectionalDrill, and MicroTrench installations, ensuring the right approach for every project. From fiberglass light pole installations up to 20 feet tall to pedestal and handhole placements, we provide clean, efficient pathways that prepare communities for the future.
+          </p>
+          <p className="text-lg text-[#17254E] mb-6">
+            At Fiber Fluent, we believe in doing the job right the first time—on schedule and within budget. Our hands-on leadership, technical knowledge, and mission-first mindset set us apart in the industry.
+          </p>
+          <h3 className="text-2xl font-bold mt-10 text-[#17254E]">Growing to Serve You Better</h3>
+          <p className="text-lg text-[#17254E]">
+            As Fiber Fluent continues to grow, we’re committed to expanding our services to meet the evolving needs of our clients and industry. Stay connected with us for updates on future service offerings.
+          </p>
+        </div>
+      </section>
+
       <div className={styles.container}>
         <div className={styles.section}>
           {/* Section 1 - Services */}
@@ -80,42 +104,7 @@ export default function Home() {
             </div>
           </motion.section>
 
-          {/* Section 3 - Slider */}
           <ImageSlider />
-
-          <motion.section
-            className="bg-white py-16 px-6"
-            id="night_work"
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <div className="max-w-screen-xl mx-auto flex flex-col lg:flex-row items-start">
-              <div className="flex-1 mb-8 lg:mb-0 flex justify-center">
-                <img
-                  src={NightWork}
-                  alt="Installation of small cell pole"
-                  className="h-[35rem] rounded-lg "
-                />
-              </div>
-              <div className="flex-1 pl-0 lg:pl-12 ">
-                <h2 className="text-4xl font-extrabold mb-6 text-[#17254E]">
-                Night Work – Precision and Efficiency After Dark
-                </h2>
-                <p className="text-lg text-[#17254E] mb-6">
-                Working at night presents unique challenges and opportunities, requiring precision, adaptability, and specialized equipment to ensure safety and efficiency. Under the glow of streetlights and work lamps, Fiber Fluent teams install essential underground infrastructure while minimizing disruptions to the city’s daytime flow.
-                <br/><br/>
-                In this image, a dedicated team member carefully guides an orange conduit into place as part of the installation. The nighttime setting—vehicles passing in the background and an excavator in motion—highlights the skill and coordination required to execute critical projects after dark. Strategic planning and proper lighting transform the quiet of the night into a productive window for progress.
-                <br/><br/>
-                This scene is a testament to the dedication and expertise that drive the future—one line at a time.
-                </p>
-                <div className="mt-12">
-                  <a href="/contact" className={styles.ctaButton}>Get in Touch</a>
-                </div>
-              </div>
-            </div>
-          </motion.section>
         </div>
       </div>
     </div>
