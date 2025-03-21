@@ -18,6 +18,8 @@ export default function Contact() {
     console.log("Form submitted:", formData);
   };
 
+
+
   return (
     <div className="mt-10 mb-20 container mx-auto flex-grow p-4">
     <section className={styles.section}>
@@ -33,22 +35,21 @@ export default function Contact() {
         ></iframe>
       </div>
 
-      {/* Sección Contacto & Formulario */}
       <div className={styles.contactContainer}>
         {/* Información de Contacto */}
         <div>
           <h3 className={styles.contactTitle}>Contact Information</h3>
           <div className={styles.contactInfo}>
             <MapPin className={styles.contactIcon} />
-            <p>2423 SW 147th Ave, Suite 263 Miami, FL 33185</p>
+            <p>2423 SW 147th Ave, Suite 263 Miami, FL 33175</p>
           </div>
           <div className={styles.contactInfo}>
             <Phone className={styles.contactIcon} />
-            <p>(001) 24568 365 987</p>
+            <p>305-204-8040</p>
           </div>
           <div className={styles.contactInfo}>
             <Mail className={styles.contactIcon} />
-            <p>info@example.com</p>
+            <p>info@fiberfluent.com</p>
           </div>
         </div>
 

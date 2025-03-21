@@ -74,9 +74,9 @@ export default function Footer() {
               <h2 className="mb-6 text-sm font-semibold uppercase">Contact</h2>
               <ul className="text-sm">
                 <li className="mb-4">2423 SW 147th Ave, Suite 263</li>
-                <li className="mb-4">Miami, FL 33185</li>
-                <li className="mb-4">(001) 24568 365 987</li>
-                <li className="mb-4">info@example.com</li>
+                <li className="mb-4">Miami, FL 33175</li>
+                <li className="mb-4">305-204-8040</li>
+                <li className="mb-4">info@fiberfluent.com</li>
               </ul>
             </div>
           </div>

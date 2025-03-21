@@ -39,7 +39,7 @@ const Slider = () => {
               Fiberglass Street Light Poles – Up to 20 Feet Tall
             </h2>
             <p className={styles.paragraph}>
-            From modern solar-powered fixtures to classic decorative designs, we provide top-tier installation services for LED and conventional lighting. Our solutions enhance visibility and security in streets, parking lots, and public spaces while ensuring durability, efficiency, and compliance with the highest safety standards.
+            From modern solar-powered fixtures to classic decorative designs, we provide top-tier installation services for LED and conventional lighting. Our solutions enhance visibility and security in streets, parking lots, and other public spaces while ensuring durability, efficiency, and compliance with the highest safety standards.
             <br/><br/>
             At Fiber Fluent, we are expanding our capabilities by investing in advanced equipment to install taller light poles, positioning ourselves for larger projects in the near future. No matter the style or lighting technology, we deliver reliable, high-quality infrastructure solutions tailored to the needs of growing communities and businesses.
             </p>

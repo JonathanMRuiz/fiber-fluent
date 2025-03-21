@@ -1,6 +1,6 @@
 export const styles = {
   container: "container mx-auto flex-grow p-4",
-  section: "py-12 px-6",
+  section: "pb-12 px-6",
   title: "text-3xl font-semibold text-center text-[#17254E] mt-20 mb-8",
   featureCardWrapper: "transform opacity-0 translate-x-20 animate-slideInLeft",
   
