@@ -27,9 +27,9 @@ export default function Footer() {
 
   return (
     <footer className="bg-white text-[#182451] shadow-[0_-4px_8px_rgba(0,0,0,0.1)]">
-      <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+      <div className="mx-auto w-full max-w-screen-xl py-6 ">
         <div className="md:flex md:justify-between">
-          <div className="mb-6 md:mb-0">
+          <div className="mb-4 md:mb-0">
             <a href="/" className="flex items-center">
               <img
                 src="https://fiberfluent.com/wp-content/uploads/2025/01/qtq_95-1.webp"
@@ -41,7 +41,7 @@ export default function Footer() {
 
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 md:grid-cols-4">
             <div>
-              <h2 className="mb-6 text-sm font-semibold uppercase">Pages</h2>
+              <h2 className="mb-4 text-sm font-semibold uppercase">Pages</h2>
               <ul className="text-sm">
                 <li className="mb-4">
                   <a href="/" className="hover:underline" onClick={(e) => handleScroll(e, '/')}>Home</a>
@@ -56,7 +56,7 @@ export default function Footer() {
             </div>
 
             <div>
-              <h2 className="mb-6 text-sm font-semibold uppercase">Sections</h2>
+              <h2 className="mb-4 text-sm font-semibold uppercase">Sections</h2>
               <ul className="text-sm">
                 <li className="mb-4">
                   <a href="/#services" className="hover:underline" onClick={(e) => handleScroll(e, '/', 'services')}>Services</a>
@@ -71,7 +71,7 @@ export default function Footer() {
             </div>
 
             <div>
-              <h2 className="mb-6 text-sm font-semibold uppercase">Contact</h2>
+              <h2 className="mb-4 text-sm font-semibold uppercase">Contact</h2>
               <ul className="text-sm">
                 <li className="mb-4">2423 SW 147th Ave, Suite 263</li>
                 <li className="mb-4">Miami, FL 33175</li>
@@ -82,7 +82,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <hr className="my-6 border-gray-300" />
+        <hr className="my-2 border-gray-300" />
 
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm">© 2025 Fiber Fluent LLC. All Rights Reserved.</span>

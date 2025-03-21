@@ -3,7 +3,7 @@ import { CheckCircle } from 'lucide-react';
 const items = [
   'OpenTrench',
   'MissileBore',
-  'DirectionalDrill',
+  'Directional & Drill',
   'MicroTrench'
 ];
 
