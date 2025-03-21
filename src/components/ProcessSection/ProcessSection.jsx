@@ -10,7 +10,7 @@ const ProcessSection = () => {
   return (
     <section className="container mx-auto flex-grow ">
       <div className="container mx-auto text-center">
-        {/* <h3 className="text-xl text-[#17254E] mb-4">Better process</h3> */}
+        
         <h2 className="text-4xl font-bold mb-8 text-[#17254E]">Services</h2>
         <p className="text-[#17254E] max-w-xl mx-auto mb-12">
           We specialize in a wide range of construction services, including residential, commercial, and industrial projects. From initial design to final inspection, we work closely with our clients to understand their unique needs and vision.

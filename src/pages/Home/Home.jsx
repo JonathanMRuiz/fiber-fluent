@@ -12,6 +12,7 @@ import Feature4 from '../../assets/feature_4.png';
 import NightWork from '../../assets/night_work.jpeg';
 import EasyStreetImage from '../../assets/easystreet.jpeg';
 import ProcessSection from '../../components/ProcessSection/ProcessSection';
+import IconList from '../../components/IconList/IconList';
 
 const featureItems = [
   { image: Feature1, title: "Feature 1", description: "This is the first feature." },
@@ -58,6 +59,23 @@ export default function Home() {
 
       <ProcessSection/>
 
+      <motion.section
+        className="bg-white pt-16 px-6"
+        id="introduction"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      >
+        <div className="max-w-screen-xl mx-auto">
+          <h2 className="text-4xl font-extrabold mb-6 text-[#17254E]">Custom Solutions for Every Project</h2>
+          <p className="text-lg text-[#17254E] mb-6">
+          We offer a variety of installation methods to suit your project needs and site conditions. From large subdivisions to private developments, we offer customized services designed to meet your timeline, budget, and quality standards. Our experienced crews coordinate with other trades to minimize disruption and keep your project on schedule.
+          </p>
+          <IconList/>
+        </div>
+      </motion.section>
+      
       
 
       
@@ -65,7 +83,7 @@ export default function Home() {
       <div className={styles.container}>
         <div className={styles.section}>
           {/* Section 1 - Services */}
-          <motion.section
+          {/* <motion.section
             id="services"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -87,11 +105,11 @@ export default function Home() {
                 </motion.div>
               ))}
             </Grid>
-          </motion.section>
+          </motion.section> */}
 
           {/* Section 2 - Installation */}
           <motion.section
-            className="bg-white py-16 px-6"
+            className="bg-white pb-16 px-6"
             id="installation"
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
