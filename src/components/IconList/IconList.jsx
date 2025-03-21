@@ -45,7 +45,9 @@ export default function IconList() {
               <span className="text-green-500 mr-3">
                 <CheckCircle size={24} />
               </span>
-              <span className="text-[#17254E] font-medium">{item.name}</span>
+              <span className="text-[#17254E] font-medium transform hover:scale-110 transition-transform duration-300">
+                {item.name}
+              </span>
             </li>
           ))}
         </ul>
