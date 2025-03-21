@@ -25,8 +25,8 @@ export default function Contact() {
         className="bg-cover bg-no-repeat bg-top w-full py-60" // Aumentado el padding vertical para mayor altura
         style={{ backgroundImage: `url(${Banner})` }}
       >
-        <h1 className="text-5xl text-white text-center">Contact</h1>
-        <p className="text-md text-white text-center">lorem</p>
+        <h1 className="text-5xl text-white text-center">Get in touch.</h1>
+        <p className="text-md text-white text-center mt-10">See what we can do for you by reaching out to key contacts or filling out the inquiry form below.</p>
       </section>
 
       <div className="container mx-auto flex-grow p-4">
