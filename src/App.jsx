@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 // Components
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
-import WhatsappComponent from "./components/WhatsappComponent/WhatsappComponent";
+
 
 // Lazy loading para las páginas
 const Home = lazy(() => import("./pages/Home/Home"));
@@ -29,7 +29,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Suspense>
-      <WhatsappComponent />
+      
       <Footer />
     </div>
   );
