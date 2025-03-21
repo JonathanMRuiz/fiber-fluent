@@ -37,7 +37,7 @@ const slides = [
 
 const Carrousel = () => {
   return (
-    <div className="relative w-full h-[80vh]">
+    <div className="relative w-full h-[60vh] sm:h-[85vh]">
       <Swiper
         modules={[Autoplay, Navigation, Pagination]}
         autoplay={{
@@ -50,7 +50,7 @@ const Carrousel = () => {
         className="w-full h-full"
         onSlideChange={(swiper) => {
           if (slides[swiper.realIndex].type === 'video') {
-            swiper.params.autoplay.delay = 10000; // 5s + 2s extra
+            swiper.params.autoplay.delay = 10000;
           } else {
             swiper.params.autoplay.delay = 5000;
           }
@@ -63,13 +63,12 @@ const Carrousel = () => {
               <video
                 src={slide.src}
                 autoPlay
-                
                 muted
-                className="w-full h-full object-cover"
+                className="w-full object-cover h-[50vh] sm:h-[85vh]"
               />
             ) : (
               <div
-                className="w-full h-[80vh] bg-cover bg-center"
+                className="w-full h-[60vh] sm:h-[85vh] bg-cover bg-center"
                 style={{ backgroundImage: `url(${slide.image})` }}
               >
                 <div className="w-full h-full flex flex-col items-center justify-center bg-black bg-opacity-40 text-white text-center px-4">
@@ -90,6 +89,7 @@ const Carrousel = () => {
         ))}
       </Swiper>
     </div>
+
   );
 };
 
