@@ -1,5 +1,5 @@
 import Section from './Section';
-import Intro from '../../assets/USA.png';
+import Intro from '../../assets/introduction.jpg';
 
 const IntroductionSection = () => (
   <Section 

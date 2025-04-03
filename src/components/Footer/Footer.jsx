@@ -26,7 +26,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-white text-[#182451] shadow-[0_-4px_8px_rgba(0,0,0,0.1)]">
+    <footer className="bg-[#FF6600] text-white shadow-[0_-4px_8px_rgba(0,0,0,0.1)]">
       <div className="mx-auto w-full max-w-screen-xl py-6 ">
         <div className="md:flex md:justify-between">
           <div className="mb-4 md:mb-0">
@@ -41,7 +41,7 @@ export default function Footer() {
 
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 md:grid-cols-4">
             <div>
-              <h2 className="mb-4 text-sm font-semibold uppercase">Pages</h2>
+              <h2 className="mb-4 text-sm font-semibold uppercase ">Pages</h2>
               <ul className="text-sm">
                 <li className="mb-4">
                   <a href="/" className="hover:underline" onClick={(e) => handleScroll(e, '/')}>Home</a>

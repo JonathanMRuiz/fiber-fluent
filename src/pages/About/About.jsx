@@ -61,6 +61,35 @@ export default function AboutUs() {
           </p>
         </motion.div>
       </div>
+
+      <div className={styles.section}>
+        {/* Imagen a la izquierda con animación */}
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className={styles.imageContainer}
+        >
+          <img src={PeterMerloImage} alt="Peter Merlo" className={styles.image} />
+        </motion.div>
+
+        {/* Texto a la derecha con animación */}
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className={styles.textContainer}
+        >
+          <h2 className={styles.title}>PETER MERLO – PRESIDENT, FIBER FLUENT LLC</h2>
+          <p className={styles.paragraph}>
+            Founded in 2022, Fiber Fluent LLC is the vision of Peter Merlo, a seasoned construction professional and U.S. Army veteran. Peter proudly served with the 173rd Airborne Combat Team in the early 2000s, where he developed the discipline, leadership, and problem-solving skills that now drive Fiber Fluent’s success.
+            <br /><br />
+            With over a decade of experience in the construction industry, Peter has worked across both residential and commercial sectors. Before launching Fiber Fluent, he supervised underground utility installations and served as a land development project manager for D.R. Horton, America’s largest publicly traded homebuilder. His deep understanding of underground infrastructure, combined with his commitment to excellence, ensures that Fiber Fluent delivers top-tier solutions for electrical and communications underground networks, other utility installations, and large-scale developments.
+            <br /><br />
+            Under Peter’s leadership, Fiber Fluent LLC is built on integrity, efficiency, and precision—providing clients with seamless underground integration solutions they can trust.
+          </p>
+        </motion.div>
+      </div>
     </div>
   );
 }

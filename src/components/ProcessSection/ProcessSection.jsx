@@ -21,12 +21,12 @@ const ProcessSection = () => {
         {steps.map((step, index) => (
           <motion.div
             key={index}
-            className="p-8 bg-white rounded-2xl shadow-lg transform transition duration-300 hover:scale-105 hover:bg-[#17254E] hover:text-white" // Duración más rápida (300ms)
+            className="p-8 bg-white rounded-2xl shadow-lg transform transition duration-300 hover:scale-105 hover:bg-[#FF6600] hover:text-white" // Duración más rápida (300ms)
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.3 }} // Reducción de duración de la animación de entrada
-            whileHover={{ scale: 1.05 }} // Efecto de zoom más rápido
+            transition={{ duration: 0.3 }} 
+            whileHover={{ scale: 1.05 }} 
           >
             <h2 className="text-4xl font-bold mb-4">{step.number}</h2>
             <h3 className="text-2xl font-semibold mb-2">{step.title}</h3>
