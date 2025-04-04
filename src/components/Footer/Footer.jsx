@@ -1,4 +1,5 @@
 import { useNavigate, useLocation } from 'react-router-dom';
+import Logo from '../../assets/logo1.png'
 
 export default function Footer() {
   const navigate = useNavigate();
@@ -26,13 +27,13 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#FF6600] text-white shadow-[0_-4px_8px_rgba(0,0,0,0.1)]">
-      <div className="mx-auto w-full max-w-screen-xl py-6 ">
+    <footer className="bg-[#FF6600] text-white shadow-[0_-6px_20px_rgba(0,0,0,0.3)]">
+      <div className="mx-auto w-full max-w-screen-xl pb-1 pt-4">
         <div className="md:flex md:justify-between">
           <div className="mb-4 md:mb-0">
             <a href="/" className="flex items-center">
               <img
-                src="https://fiberfluent.com/wp-content/uploads/2025/01/qtq_95-1.webp"
+                src={Logo}
                 className="h-16 me-3"
                 alt="Fiber Fluent Logo"
               />
@@ -82,7 +83,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <hr className="my-2 border-gray-300" />
+        <hr className="my-1 border-gray-300" />
 
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm">© 2025 Fiber Fluent LLC. All Rights Reserved.</span>

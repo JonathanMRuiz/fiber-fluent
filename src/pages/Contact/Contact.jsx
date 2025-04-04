@@ -17,7 +17,7 @@ export default function Contact() {
     setSuccess(false);
     
     try {
-      const response = await fetch("http://localhost:3001/send", {
+      const response = await fetch("https://fiberfluent.com/send.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -42,7 +42,10 @@ export default function Contact() {
       <div className='w-full max-w-12xl mb-10'>
         <iframe
           title="Google Maps Location"
-          className='w-full h-72 rounded-lg shadow-lg border-4 border-orange-500'
+          className='w-full h-72 rounded-lg shadow-[3px_3px_0px_3px_rgba(255,102,0,1),8px_8px_12px_0px_rgba(0,0,0,0.4)]'
+
+
+
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3588.7462662611623!2d-80.4290123!3d25.6288777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9c17f10801b03%3A0x2e02b6a2c05c3f5e!2s2423%20SW%20147th%20Ave%2C%20Miami%2C%20FL%2033185%2C%20USA!5e0!3m2!1sen!2s!4v1710123456789"
           allowFullScreen=""
           loading="lazy"

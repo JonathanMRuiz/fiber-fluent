@@ -1,5 +1,5 @@
 import Section from './Section';
-import NightWork from '../../assets/night_work.jpeg';
+import NightWork from '../../assets/night_work.jpg';
 
 const NightWorkSection = () => (
   <Section id="night_work">

@@ -10,10 +10,12 @@ import EasyStreetImage from "../../assets/easystreet.jpeg";
 import Carrousel_1 from "../../assets/carrousel_1.png";
 import Carrousel_3 from "../../assets/night_work_2.jpg";
 
+import Video from "../../assets/video.mp4";
+
 const slides = [
   {
     type: "video",
-    src: "https://fiberfluent.com/wp-content/uploads/2025/01/Fiber-Fluent-White-BG-Video.mp4",
+    src: Video
   },
   {
     image: EasyStreetImage,

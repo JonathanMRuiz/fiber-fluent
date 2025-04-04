@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react"; // Íconos de menú
 import styles from "./styles";
+import Logo from '../../assets/logo1.png'
 
 export default function Navbar() {
   const location = useLocation();
@@ -18,7 +19,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link to="/">
           <img
-            src="https://fiberfluent.com/wp-content/uploads/2025/01/qtq_95-1.webp"
+            src={Logo}
             alt="Logo"
             className={styles.logo}
           />
